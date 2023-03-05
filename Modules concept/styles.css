@@ -1,0 +1,87 @@
+body {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  /* background-color: orange */
+}
+
+h1 {
+  font-size: 50px;
+}
+h2 {
+  font-size: 30px;
+}
+p {
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+.container {
+  display: grid;
+  background-color: rgb(178, 170, 170);
+  margin: 0;
+  padding: 0;
+}
+
+.containerUp {
+  margin: 0;
+  background-color: #c9d1d3;
+  padding: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  /* margin: 20px 20px; */
+}
+
+button {
+  color: white;
+  background-color: blue;
+  border: none;
+  padding: 10px;
+  padding-left: 15px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.container-bottom {
+  background-color: green;
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+  gap: 30px;
+  padding: 20px;
+  background-color: white;
+  padding-left: 80px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+}
+
+.containerOne {
+  text-align: left;
+  padding: 15px;
+}
+
+.btn {
+  background-color: rgb(96, 92, 92);
+  /* padding: 20px; */
+  margin-top: 25px;
+}
+
+.footer {
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 520px) {
+  .containerUp {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .container-bottom {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+  }
+}
