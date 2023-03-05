@@ -1,0 +1,10 @@
+get http://localhost:5000/students
+
+###
+post http://localhost:5000/students
+Content-Type: application/json
+
+{
+  "name" : "Vishnu",
+  
+}

@@ -1,0 +1,34 @@
+get http://localhost:4000/youtube-api/get-owner
+
+###
+post http://localhost:4000/youtube-api/create-data
+Content-Type:  application/json
+
+{
+    
+    "owner_name":"vishnu",
+    "channel":{
+        "channel_name":"teach",
+        "videos":[
+            {
+                "video_title":"teach 1"
+            },
+            {   
+                "video_title":"teach 2"
+            }
+        ]
+    }
+}
+
+### get by owner
+get http://localhost:4000/youtube-api/get-owner/1
+
+
+### getting channels of owner
+get http://localhost:4000/youtube-api/get-owner/1
+
+### getting videos of channel
+get http://localhost:4000/youtube-api/get-videos/1
+
+###
+get http://localhost:4000/youtube-api/get-owner-channel/2

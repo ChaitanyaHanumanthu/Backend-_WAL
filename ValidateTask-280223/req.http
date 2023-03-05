@@ -1,0 +1,87 @@
+get http://localhost:4000/student-api/students
+
+###
+post http://localhost:4000/student-api/students
+Content-Type: application/json
+
+{
+  "name": "shameer", 
+  "DateOfBirth" : "2002-08-03",
+  "email": "shameer@gmail.com"
+}
+
+
+###
+get http://localhost:4000/student-api/student/1
+
+
+###
+  post http://localhost:4000/student-api/5/address
+Content-Type: application/json
+
+{
+  "street" : "Guntur",
+  "city": "gtr"
+}
+
+###
+post http://localhost:4000/student-api/5/mark
+Content-Type: application/json
+
+{
+  "semester" : 2,
+  "roll_no" : 5,
+  "maths" : 55,
+  "physics" : 50,
+  "chemistry":  60
+}
+
+
+###
+put http://localhost:4000/student-api/1/new-address
+Content-Type: application/json
+
+{
+   "address_id": 4,
+  "street" : "Kanimetta",
+  "city": "SKLM"
+}
+
+
+// PUT http://localhost:4000/student-api/student/<roll_no>/semester/<sem-id>/new-marks
+###
+put http://localhost:4000/student-api/1/semester/2/new-marks
+Content-Type: application/json
+
+{
+
+  "maths" : 30,
+  "physics" : 40,
+  "chemistry":  50
+}
+
+###
+post http://localhost:4000/student-api/studentsvalid
+Content-Type: application/json
+
+{
+  "name": "Guna", 
+  "DateOfBirth" : "2002-08-03",
+  "email": "Gunaagmail.com"
+}
+
+
+
+###
+put http://localhost:4000/student-api/student/4
+Content-Type: application/json
+
+{
+  "name": "Vishnu", 
+  "DateOfBirth" : "2002-08-03",
+  "email": "Vishnu@gmail.com",
+  "status" : "false"
+}
+
+###
+get http://localhost:4000/student-api/student-with-aggregate

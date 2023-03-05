@@ -1,0 +1,76 @@
+get http://localhost:1010/getUsers
+
+
+###
+post http://localhost:1010/createUser
+Content-Type: application/json
+
+{
+  "username" : "Chaitanya1", 
+  "password" : "Chaitu@123"
+}
+
+###
+post http://localhost:1010/login-user
+Content-Type: application/json
+
+{
+  "username" : "Anonymous", 
+  "password" : "Anonymous@123"
+}
+
+###
+put http://localhost:1010/modify-user
+Content-Type: application/json
+
+{
+  "username": "Anonymous",
+  "password": "Updated"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###
+post http://localhost:1010/login
+Content-Type: application/json
+
+{
+  "username" : "Chaitu",
+  "password" : "Chaitu"
+}
+
+
+###
+put http://localhost:1010/modify-user
+Content-Type: application/json
+
+{
+  "username" : "Chaitu", 
+  "password" : "Chaitu", 
+  "newUsername": "Chaitanya"
+}
+
+
+###
+get http://localhost:1010/logout
+
+

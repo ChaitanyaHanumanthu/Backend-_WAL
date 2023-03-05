@@ -1,0 +1,68 @@
+get http://localhost:5000/customer-api/customer
+
+###
+get http://localhost:5000/product-api/product
+
+###
+post http://localhost:5000/customer-api/customer
+Content-Type: application/json
+
+{
+  "customer_name": "Deepu", 
+  "customer_email": "Deepu@gmail.com"
+}
+
+###
+post http://localhost:5000/product-api/product
+Content-Type: application/json
+
+{
+  "product_name": "Laptop", 
+  "product_price": 47799
+}
+
+###
+post http://localhost:5000/customer-api/customer-review
+Content-Type: application/json
+
+{
+  "customer_id": 2,
+  "product_id" : 2,
+  "review_date" : "2010-10-10",
+  "review_desc" : "Mouse"
+}
+
+
+###
+get http://localhost:5000/customer-api/customer-review/2
+
+
+###
+post http://localhost:5000/customer-api/customer-order
+Content-Type: application/json
+
+{
+  "order_date": "2022-01-10",
+  "customer_id": 1,
+  "product_id" : 3
+}
+
+###
+get http://localhost:5000/customer-api/customer-order/1
+
+
+###
+post http://localhost:5000/customer-api/add-address
+Content-Type: application/json
+
+{
+  "customer_name": "Sekhar", 
+  "customer_email": "Sekhar@gmail.com",
+  "address" : {
+    "street" : "main", 
+    "city": "slm",
+    "state" : "Andhra", 
+    "pincode" : 532402
+  }
+}
+
